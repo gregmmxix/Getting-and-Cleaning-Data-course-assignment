@@ -16,13 +16,13 @@ Detailed transformation information is provided in the codebook.
 
 ## REPOSITORY CONTENTS ##
 The dataset contains following files:
-* ReadMe - current file you are reading
-* Set_1_Average_mean_sd_by_subject_activity.txt – tidy data set.
-* Codebook:
+* **ReadMe.md** - current file you are reading
+* **Set_1_Average_mean_sd_by_subject_activity.txt** – tidy data set.
+* **Codebook.md**:
   * Appended descriptions from codebook of original data set.
   * Description of the transformation process. 
   * Description of dataset variables, variable transformation process.
-* data_cleaning_project_f_features.R - R script which downloads original data and performs required transformations to create tidy data set. R script contains comments on some of the step taken. 
+* **data_cleaning_project_f.R** - R script which downloads original data and performs required transformations to create tidy data set. R script contains comments on some of the steps taken. 
  
 ## READING THE DATASET ##
 Tidy data set is provided as space separated *.txt file. Tidy dataset can be read into R by using default read.table settings from utils package:
