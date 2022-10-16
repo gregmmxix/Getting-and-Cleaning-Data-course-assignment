@@ -22,7 +22,7 @@ The dataset contains following files:
   * Appended descriptions from codebook of original data set.
   * Description of the transformation process. 
   * Description of dataset variables, variable transformation process.
-* **data_cleaning_project_f.R** - R script which downloads original data and performs required transformations to create tidy data set. R script contains comments on some of the steps taken. 
+* **run_analysis.R** - R script which downloads original data and performs required transformations to create tidy data set. R script contains comments on some of the steps taken. 
  
 ## READING THE DATASET ##
 Tidy data set is provided as space separated *.txt file. Tidy dataset can be read into R by using default read.table settings from utils package:
