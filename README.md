@@ -3,13 +3,13 @@
 ## PURPOSE REPOSITORY ##
 Repository is created as part of "Peer-graded Assignment" for Coursera "Getting and Cleaning Data Course".  
 
-Goal of the assignment is to provide tidy data and accompamying materials for it (ReadMe, Codebook, R script used for data transformations). 
+Goal of the assignment is to provide tidy data and accompanying materials for it (ReadMe, Codebook, R script used for data transformations). 
 
 As per assignment requirements final tidy data set is prepared by transforming original data set "Human Activity Recognition Using Smartphones Data Set" by following transformation guidelines: 
-  *merge original data sets into one data set; 
-  *extracts the measurements on the mean and standard deviation; 
-  *puts descriptive activity names and appropriate variable names;
-  *creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+* merge original data sets into one data set; 
+* extracts the measurements on the mean and standard deviation; 
+* puts descriptive activity names and appropriate variable names;
+* creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
 Detailed transformation information is provided in the codebook. 
 
@@ -36,7 +36,7 @@ Tidy data set prepared using RStudio.
 
 R version: R-4.2.0
 
-Rstudio version version: RStudio 2022.02.3+492 "Prairie Trillium" Release (1db809b8323ba0a87c148d16eb84efe39a8e7785, 2022-05-20) for Windows
+RStudio version version: RStudio 2022.02.3+492 "Prairie Trillium" Release (1db809b8323ba0a87c148d16eb84efe39a8e7785, 2022-05-20) for Windows
 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.12.8 Chrome/69.0.3497.128 Safari/537.36
 
 ## RUNNING R CODE ##
@@ -52,7 +52,7 @@ Code execution will be as follows:
 
 
 ## THE ORIGINAL DATA SET ##
-The original data for assignment comes from experiment "Human Activity Recognition Using Smartphones Data Set". Description of the experimnent can be found here: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+The original data for assignment comes from experiment "Human Activity Recognition Using Smartphones Data Set". Description of the experiment can be found here: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
 Data set used for the assignment can be found in following link. The data set contains in depth description of the data origins: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
