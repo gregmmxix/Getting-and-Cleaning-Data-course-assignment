@@ -1,6 +1,6 @@
 # CODEBOOK #
 
-The features presented in the tidy data set are taken from the original data set "Human Activity Recognition Using Smartphones Data Set". ACKNOWLEDGEMENT of original authors of the data set and section DESCRIPTION OF ORIGINAL VARIABLES BEFORE TRANSFORMATION provided in section ACKNOWLEDGEMENT AND LICENSE.
+The features presented in the tidy data set are taken from the original data set "Human Activity Recognition Using Smartphones Data Set". Acknowledgement of original authors of the data set and description in section DESCRIPTION OF ORIGINAL VARIABLES BEFORE TRANSFORMATION provided in ReadMe ACKNOWLEDGEMENT AND LICENSE section.
 
 ## DESCRIPTION OF ORIGINAL VARIABLES BEFORE TRANSFORMATION ##
 
@@ -12,13 +12,14 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 
 **For each record it is provided:**
+
 * Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 * Triaxial Angular velocity from the gyroscope. 
 * A 561-feature vector with time and frequency domain variables. 
 * Its activity label. 
 * An identifier of the subject who carried out the experiment.
 
-**Feature Selection **
+**Feature Selection**
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
@@ -87,7 +88,7 @@ Variable names are assigned from original data DATA.LIST$FEATURES. As result of 
  
 **Spep 2. Extracts only the measurements on the mean and standard deviation for each measurement**
 
-From FEATURES data frame new data frame FEATURES.MEAN.STDEV is created. FEATURES.MEAN.STDEV contains variables which represent means and standard deviation of particular observation. Variables to be included in FEATURES.MEAN.STDEV are selected based on their name (should contain mean() or std())
+From FEATURES data frame FEATURES.MEAN.STDEV data frame is created. FEATURES.MEAN.STDEV contains variables which represent means and standard deviation of particular observation. Variables to be included in FEATURES.MEAN.STDEV are selected based on their name (should contain mean() or std())
 
 **Step 3. Uses descriptive activity names to name the activities in the data set** 
 
@@ -99,7 +100,9 @@ Descriptive variable names added in Step 1. Names of variables are left as in or
 
 **Step 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject**
 
-Data is summarized by calculating average of variables for each activity and subject combination. Variable names are adjusted by adding "_avg" as variables became avg. versions of originals.
+Data in FEATURES.MEAN.STDEV is summarized by calculating average of variables for each activity and subject combination. Summarized veriables saved as MEAN.STDEV.AGGR data.frame. Variable names are adjusted by adding "_avg" as variables became average versions of originals.
+
+MEAN.STDEV.AGGR data frame is final tidy dataset which is exported as result of assignment.
 
 **Tidy data set**
 
